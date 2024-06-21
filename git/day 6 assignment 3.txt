@@ -1,0 +1,49 @@
+
+   3. write a step to create a new branch and merge with master branch
+
+
+Checkout Master Branch:
+
+Copy code
+git checkout master
+Create a New Branch:
+
+arduino
+Copy code
+git checkout -b new-feature
+Make Changes and Commit:
+Make your changes to the codebase or files as needed. Once you're done, stage and commit your changes:
+
+sql
+Copy code
+git add .
+git commit -m "Implemented new feature"
+Switch Back to Master Branch:
+
+Copy code
+git checkout master
+Merge Branch:
+
+sql
+Copy code
+git merge new-feature
+This command merges the changes from the new-feature branch into the master branch.
+
+Resolve Conflicts (if any):
+If there are any merge conflicts, Git will prompt you to resolve them. You'll need to manually edit the conflicting files to resolve the conflicts, then add the resolved files and commit the changes.
+
+Push Changes:
+After resolving conflicts (if any), push the changes to the remote repository:
+
+perl
+Copy code
+git push origin master
+Delete the Branch (optional):
+If you no longer need the new-feature branch, you can delete it:
+
+arduino
+Copy code
+git branch -d new-feature
+This deletes the branch locally. Use -D instead of -d if the branch hasn't been merged yet and you want to force delete it.
+
+These steps outline a basic workflow for creating a new branch, making changes, merging them back into the master branch, and handling any conflicts that may arise during the merge process.
