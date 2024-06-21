@@ -1,0 +1,38 @@
+
+
+Facilitator (Team Lead or Scrum Master):
+
+"Good morning, everyone. Let's get started with our daily stand-up. We'll follow our usual format: what you did yesterday, what you're working on today, and any blockers you might have. Keep it brief, please."
+
+Team Member 1:
+
+"Yesterday, I finished the user authentication feature and started on the profile page layout. Today, I'll continue working on the profile page and begin testing the authentication. I don't have any blockers at the moment."
+
+Facilitator:
+
+"Great, thanks. Next, [Team Member 2]."
+
+Team Member 2:
+
+"Yesterday, I fixed the bugs we found in the payment gateway. Today, I'm going to work on integrating the new API for the product listings. I'm facing an issue with the API documentation being incomplete, so I might need some help there."
+
+Facilitator:
+
+"Thanks for the update. [Team Member 3], you're up."
+
+Team Member 3:
+
+"Yesterday, I updated the database schema and started on the migration scripts. Today, I'll continue with the data migration and begin writing unit tests for the new schema. No blockers from my side."
+
+Facilitator:
+
+"Thanks. [Team Member 4], go ahead."
+
+Team Member 4:
+
+"Yesterday, I worked on the front-end design tweaks for the dashboard. Today, I'll focus on implementing those changes and start on the responsiveness for mobile devices. No blockers for me."
+
+Facilitator:
+
+"Great, thanks everyone. Just a reminder, if you encounter any issues or need help, feel free to reach out. Let's have a productive day. Meeting adjourned."
+

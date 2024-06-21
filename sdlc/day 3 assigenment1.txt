@@ -1,0 +1,34 @@
+
+Day 3 - Assignment 1: Create an infographic illustrating the Test-Driven Development (TDD) process. Highlight steps like writing tests before code, benefits such as bug reduction, and how it fosters software reliability.
+
+
+Test-Driven Development (TDD) Process
+Steps:
+Write a Test:
+
+Write a test for a new feature or function.
+
+                  Run the Test:
+
+Run the test and see it fail (since the feature isn’t implemented yet).
+
+                  Write Code:
+
+Write the minimum amount of code to make the test pass.
+
+               Run the Test Again:
+Run the test again and see it pass.
+
+                       Refactor Code:
+Refactor the code while ensuring all tests still pass.
+
+
+                               Benefits:
+Bug Reduction:
+Helps identify and fix bugs early in the development process.
+Software Reliability:
+Ensures that the software behaves as expected and is reliable.
+
+
+
+

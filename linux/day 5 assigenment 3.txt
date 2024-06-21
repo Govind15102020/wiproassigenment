@@ -1,0 +1,93 @@
+linux 30 commands
+
+
+
+ls: Lists directory contents.
+cd: Changes the current directory.
+pwd: Prints the working directory.
+cp: Copies files or directories.
+mv: Moves or renames files or directories.
+rm: Removes files or directories.
+mkdir: Creates a new directory.
+rmdir: Removes an empty directory.
+touch: Creates an empty file or updates the timestamp of an existing file.
+chmod: Changes the permissions of a file or directory.
+chown: Changes the owner and group of a file or directory.
+ln: Creates hard and symbolic links between files.
+cat: Concatenates and displays file contents.
+less: Displays file contents one page at a time.
+head: Outputs the first part of files.
+tail: Outputs the last part of files.
+grep: Searches for patterns in files.
+find: Searches for files in a directory hierarchy.
+locate: Finds files by name using a database.
+du: Estimates file space usage.
+df: Reports file system disk space usage.
+ps: Displays information about active processes.
+top: Displays real-time system information, including processes.
+kill: Sends a signal to terminate a process.
+ping: Checks the network connection to a server.
+wget: Downloads files from the web.
+curl: Transfers data from or to a server.
+ssh: Connects to a remote machine securely.
+tar: Archives files.
+sudo: Executes a command as another user, typically the superuser.
+
+
+
+
+
+Copy code
+   a. write a command to create a file named demo.txt inside Movies directory 
+   b. copy  hello.txt files from Desktop to Downloads directory 
+   c. Write a command to display all the files from Movies Directory
+   d. display first 15 lines of demo.txt file
+   e. using cat command, create a new file and write the data to the file.
+   f. read the file content of demo.txt
+3. explain absolute and relative path
+
+
+
+
+a. Create a file named demo.txt inside the Movies directory
+bash
+Copy code
+touch ~/Movies/demo.txt
+b. Copy hello.txt file from Desktop to Downloads directory
+bash
+Copy code
+cp ~/Desktop/hello.txt ~/Downloads/
+c. Display all the files from the Movies directory
+bash
+Copy code
+ls ~/Movies
+d. Display the first 15 lines of the demo.txt file
+bash
+Copy code
+head -n 15 ~/Movies/demo.txt
+e. Using cat command, create a new file and write data to the file
+bash
+Copy code
+cat > newfile.txt
+# After running the above command, you can type the data you want to write to the file.
+# Once you are done, press Ctrl+D to save the file.
+f. Read the file content of demo.txt
+bash
+Copy code
+cat ~/Movies/demo.txt
+3. Explain Absolute and Relative Path
+Absolute Path:
+An absolute path specifies a location from the root directory (/) and provides the complete path to the file or directory. It does not depend on the current working directory. An absolute path always starts with a /.
+
+Example:
+
+/home/user/Documents/file.txt
+/var/log/syslog
+Relative Path:
+A relative path specifies a location relative to the current working directory. It does not start with a /, and it can use special symbols like . (current directory) and .. (parent directory) to navigate the file system.
+
+Example:
+
+Documents/file.txt (if the current working directory is /home/user)
+../file.txt (refers to a file in the parent directory of the current working directory)
+Using absolute paths ensures that you are specifying the exact location of a file or directory in the file system, while relative paths are useful for navigating within a directory structure without needing to specify the full path.

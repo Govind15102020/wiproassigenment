@@ -1,0 +1,27 @@
+
+
+1. Product Owner
+Responsibilities:
+
+Vision and Roadmap: Defines the product vision and sets the roadmap to achieve it. Ensures the team understands the goals and the value they bring to the customer.
+Backlog Management: Creates, maintains, and prioritizes the product backlog. Ensures the backlog items are well-defined and clearly communicate what is needed.
+Stakeholder Engagement: Acts as the primary point of contact for stakeholders, gathering their input and feedback. Balances the needs and priorities of different stakeholders.
+Acceptance Criteria: Defines acceptance criteria for backlog items and ensures they are met. Decides whether to accept or reject work completed by the team.
+2. Scrum Master
+Responsibilities:
+
+Facilitation: Facilitates Scrum ceremonies, including sprint planning, daily stand-ups, sprint reviews, and retrospectives. Ensures these meetings are productive and time-boxed.
+Coaching and Mentoring: Coaches the team on Scrum practices and principles. Helps the team to self-organize and work cross-functionally.
+Removing Impediments: Identifies and removes obstacles that hinder the team’s progress. Works with the team and organization to resolve any issues.
+Promoting Scrum: Advocates for Scrum and helps the organization adopt and understand its benefits. Works to create a supportive environment for Scrum to thrive.
+3. Development Team
+Responsibilities:
+
+Self-Organization: Self-organizes to accomplish the tasks and achieve the sprint goals. The team collectively decides how to best complete the work.
+Cross-Functionality: Possesses all the skills necessary to deliver a potentially releasable increment of the product at the end of each sprint. Team members collaborate and support each other.
+Commitment to Goals: Commits to the sprint goals and works to deliver high-quality work within the sprint time frame.
+Continuous Improvement: Participates in sprint retrospectives and continuously seeks ways to improve processes, collaboration, and product quality.
+Additional Considerations
+Collaboration: All three roles must collaborate closely, ensuring clear communication and a shared understanding of goals and priorities.
+Transparency: Scrum relies on transparency, so all roles must be open and honest about progress, challenges, and any issues that arise.
+Inspection and Adaptation: Regularly inspect progress towards goals and adapt plans as needed to ensure successful delivery.

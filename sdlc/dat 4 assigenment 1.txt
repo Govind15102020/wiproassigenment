@@ -1,0 +1,23 @@
+
+Scrum and Kanban are both popular frameworks used in Agile project management, but they differ in several key aspects:
+
+Methodology:
+
+Scrum: It is an iterative and incremental Agile framework focused on delivering products in short cycles called sprints. It emphasizes a fixed set of roles, ceremonies (such as sprint planning, daily stand-ups, sprint review, and retrospective), and artifacts (like the product backlog, sprint backlog, and increment).
+Kanban: It is more flexible and less prescriptive than Scrum. Kanban focuses on visualizing work, limiting work in progress (WIP), and maximizing flow. It doesn't prescribe specific roles or timeboxed iterations but rather allows teams to continuously deliver work as capacity allows.
+Work Structure:
+
+Scrum: Work is organized into sprints, typically lasting 1-4 weeks. Each sprint begins with a planning session where the team commits to a set of work items from the product backlog. Changes to the sprint backlog are discouraged during the sprint.
+Kanban: Work is visualized on a Kanban board with columns representing different stages of the workflow (e.g., To Do, In Progress, Done). There are no fixed timeboxes (sprints); work items are pulled into the workflow as capacity becomes available. Continuous delivery and flow are emphasized.
+Roles and Responsibilities:
+
+Scrum: Defines specific roles including the Product Owner (represents stakeholders and prioritizes work), Scrum Master (facilitates the Scrum process and removes impediments), and Development Team (self-organizing team that completes the work).
+Kanban: Does not define specific roles. Responsibility for different aspects of the process (e.g., prioritization, impediment removal) may be shared among team members or assigned based on team agreements.
+Cadence and Flexibility:
+
+Scrum: Has a fixed cadence (sprint length) and specific events (sprint planning, daily stand-ups, etc.), providing a structured approach that promotes regular inspection and adaptation.
+Kanban: Offers more flexibility in terms of workflow management. Work is pulled as capacity allows, and there are no prescribed timeboxes or mandatory events beyond visualizing the workflow and managing WIP limits.
+Focus:
+
+Scrum: Focuses on delivering a potentially shippable product increment at the end of each sprint. It aims to minimize changes to the sprint backlog during the sprint to maintain focus and predictability.
+Kanban: Focuses on continuous delivery and optimizing flow. It encourages incremental improvements to the workflow and allows for changes and reprioritization of work items at any time.

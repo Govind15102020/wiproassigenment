@@ -1,0 +1,29 @@
+2.write 3 user stories with acceptance creteria in short
+
+
+ChatGPT
+Certainly! Here are three user stories with acceptance criteria:
+
+User Story: As a user, I want to be able to log into the application using my email and password.
+
+Acceptance Criteria:
+User enters valid email and password.
+System verifies the credentials against the database.
+Upon successful verification, user gains access to the application dashboard.
+Incorrect credentials display an error message prompting the user to retry.
+User Story: As a customer, I want to be able to add products to my shopping cart.
+
+Acceptance Criteria:
+User navigates to the product catalog.
+User selects desired products by clicking on "Add to Cart" button.
+System updates the shopping cart icon with the total count of items added.
+User can view the updated cart contents by clicking on the cart icon.
+Cart reflects the correct quantity and prices of selected items.
+User Story: As an admin, I want to be able to manage user roles and permissions.
+
+Acceptance Criteria:
+Admin accesses the user management section.
+Admin can view a list of existing users and their roles.
+Admin can add a new user with specified roles and permissions.
+Admin can edit roles and permissions for existing users.
+Changes to roles and permissions are saved and reflected in the application immediately.
