@@ -1,0 +1,36 @@
+1. Create Table
+sql
+Copy code
+CREATE TABLE product (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+2. Drop Table
+sql
+Copy code
+DROP TABLE IF EXISTS product;
+3. Alter Table
+a. Add a Column
+sql
+Copy code
+ALTER TABLE product
+ADD COLUMN description TEXT;
+b. Modify a Column
+sql
+Copy code
+ALTER TABLE product
+MODIFY COLUMN price DECIMAL(12, 2) NOT NULL;
+c. Drop a Column
+sql
+Copy code
+ALTER TABLE product
+DROP COLUMN stock_quantity;
+4. Rename Table
+sql
+Copy code
+ALTER TABLE product
+RENAME TO product_info;
+Explanation:

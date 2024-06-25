@@ -1,0 +1,40 @@
+1. Find the product whose category is 'electronics'
+
+SELECT * FROM product
+WHERE category = 'electronics';
+2. Find all the products whose price range is between 5000 and 10000
+sql
+Copy code
+SELECT * FROM product
+WHERE price BETWEEN 5000 AND 10000;
+3. Display name and price from the product table
+sql
+Copy code
+SELECT product_name, price FROM product;
+4. Display all the electronic category items which have a price more than 2000
+sql
+Copy code
+SELECT * FROM product
+WHERE category = 'electronics' AND price > 2000;
+5. Sort the product based on price in descending order
+sql
+Copy code
+SELECT * FROM product
+ORDER BY price DESC;
+6. Sort the product based on name
+sql
+Copy code
+SELECT * FROM product
+ORDER BY product_name;
+7. Count of products based on category
+sql
+Copy code
+SELECT category, COUNT(*) AS product_count
+FROM product
+GROUP BY category;
+8. Display all the products except the electronics category
+sql
+Copy code
+SELECT * FROM product
+WHERE category != 'electronics';
+Explanation:

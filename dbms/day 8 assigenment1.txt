@@ -1,0 +1,44 @@
+. Create Table
+
+
+
+CREATE TABLE product (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+2. Insert Product Data
+sql
+Copy code
+INSERT INTO product (product_name, price, stock_quantity, description) VALUES
+('Product A', 19.99, 100, 'Description for Product A'),
+('Product B', 29.99, 200, 'Description for Product B'),
+('Product C', 39.99, 150, 'Description for Product C');
+3. Retrieve All Product Details
+sql
+Copy code
+SELECT * FROM product;
+4. Retrieve Product ID and Product Name
+sql
+Copy code
+SELECT product_id, product_name FROM product;
+5. Update a Product
+Assuming we want to update the price and stock quantity of a product with product_id = 1:
+
+sql
+Copy code
+UPDATE product
+SET price = 24.99, stock_quantity = 120
+WHERE product_id = 1;
+6. Delete a Product
+Assuming we want to delete a product with product_id = 2:
+
+sql
+Copy code
+DELETE FROM product
+WHERE product_id = 2;
+Explanation:
+Create Table: The CR
