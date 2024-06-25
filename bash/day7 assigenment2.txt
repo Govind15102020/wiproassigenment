@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Specify the file name
+file_name="myfile.txt"
+
+# Check if the file exists in the current directory
+if [ -f "$file_name" ]; then
+    echo "File exists"
+else
+    echo "File not found"
+fi
+Save this script to a file, for example check_file.sh, and make it executable with the following command:
+
+bash
+Copy code
+chmod +x check_file.sh
+You can then run the script with:
+
+bash
+Copy code
+./check_file.sh
