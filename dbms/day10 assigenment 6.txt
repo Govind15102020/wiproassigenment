@@ -1,0 +1,173 @@
+
+Assignment 5: Craft a query using an INNER JOIN to combine 'orders' and 'customers' tables for customers in a specified region, and a LEFT JOIN to display all customers including those without orders.
+
+
+
+
+Using an INNER JOIN to combine orders and customers tables for customers in a specified region.
+Using a LEFT JOIN to display all customers, including those without orders.
+Here’s how you can construct these queries:
+
+Part 1: INNER JOIN for customers in a specified region
+Assume the tables orders and customers have the following structure:
+
+orders: order_id, customer_id, order_date, order_amount
+customers: customer_id, customer_name, region
+We will join these tables on customer_id and filter for customers in a specific region, say 'West'.
+
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+INNER JOIN 
+    orders o ON c.customer_id = o.customer_id
+WHERE 
+    c.region = 'West';
+Part 2: LEFT JOIN to display all customers including those without orders
+This query ensures that all customers are displayed, with null values for orders if there are no corresponding orders.
+
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+LEFT JOIN 
+    orders o ON c.customer_id = o.customer_id;
+Combining both parts together, the SQL queries would look like this:
+
+Combined Queries
+Query 1: INNER JOIN for customers in a specified region (e.g., 'West')
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+INNER JOIN 
+    orders o ON c.customer_id = o.customer_id
+WHERE 
+    c.region = 'West';
+Query 2: LEFT JOIN to display all customers including those without orders
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+LEFT JOIN 
+    orders o ON c.customer_id = o.customer_id;
+These queries should fulfill the requirements for your assignment.
+
+Assignment 6: Utilize a subquery to find customers who have placed orders above the average order value, and write a UNION query to combine two SELECT statements with the same number of columns.
+ChatGPT
+To complete Assignment 6, we'll tackle it in two parts:
+
+Use a subquery to find customers who have placed orders above the average order value.
+Write a UNION query to combine two SELECT statements with the same number of columns.
+Part 1: Subquery to find customers who have placed orders above the average order value
+Assuming the orders table has columns order_id, customer_id, and order_amount, we can first calculate the average order value, then use this in a subquery to find customers whose orders exceed this average.
+
+Query:
+sql
+Copy code
+SELECT 
+    customer_id, 
+    order_id, 
+    order_amount
+FROM 
+    orders
+WHERE 
+    order_amount > (SELECT AVG(order_amount) FROM orders);
+Part 2: UNION query to combine two SELECT statements with the same number of columns
+For the UNION query, we'll create two SELECT statements that retrieve data from the customers and orders tables. These SELECT statements must have the same number of columns and compatible data types.
+
+Assume we want to combine a list of customers from a specific region with a list of customers who have placed orders above a certain amount.
+
+Query:
+sql
+Copy code
+-- First SELECT statement: Customers from the 'East' region
+SELECT 
+    c.customer_id, 
+    c.customer_name, 
+    'East' AS region
+FROM 
+    customers c
+WHERE 
+    c.region = 'East'
+
+UNION
+
+-- Second SELECT statement: Customers with orders above a certain amount (e.g., $1000)
+SELECT 
+    o.customer_id, 
+    c.customer_name, 
+    'High Order' AS region
+FROM 
+    orders o
+JOIN 
+    customers c ON o.customer_id = c.customer_id
+WHERE 
+    o.order_amount > 1000;
+Combined Queries
+Query 1: Subquery to find customers who have placed orders above the average order value
+sql
+Copy code
+SELECT 
+    customer_id, 
+    order_id, 
+    order_amount
+FROM 
+    orders
+WHERE 
+    order_amount > (SELECT AVG(order_amount) FROM orders);
+Query 2: UNION query to combine two SELECT statements with the same number of columns
+sql
+Copy code
+-- First SELECT statement: Customers from the 'East' region
+SELECT 
+    c.customer_id, 
+    c.customer_name, 
+    'East' AS region
+FROM 
+    customers c
+WHERE 
+    c.region = 'East'
+
+UNION
+
+-- Second SELECT statement: Customers with orders above a certain amount (e.g., $1000)
+SELECT 
+    o.customer_id, 
+    c.customer_name, 
+    'High Order' AS region
+FROM 
+    orders o
+JOIN 
+    customers c ON o.customer_id = c.customer_id
+WHERE 
+    o.order_amount > 1000;
+These queries address the requirem

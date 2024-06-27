@@ -1,0 +1,38 @@
+CREATE TABLE Authors (
+    AuthorID INT NOT NULL AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    PRIMARY KEY (AuthorID)
+);
+
+CREATE TABLE Books (
+    BookID INT NOT NULL AUTO_INCREMENT,
+    Title VARCHAR(255) NOT NULL,
+    Genre VARCHAR(100) NOT NULL,
+    AuthorID INT NOT NULL,
+    PublishedYear YEAR CHECK (PublishedYear >= 1500 AND PublishedYear <= YEAR(CURRENT_DATE)),
+    ISBN VARCHAR(13) UNIQUE NOT NULL,
+    PRIMARY KEY (BookID),
+    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+CREATE TABLE Members (
+    MemberID INT NOT NULL AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL CHECK (DateOfBirth <= CURRENT_DATE),
+    Email VARCHAR(255) UNIQUE NOT NULL,
+    PhoneNumber VARCHAR(15) UNIQUE,
+    PRIMARY KEY (MemberID)
+);
+
+CREATE TABLE Loans (
+    LoanID INT NOT NULL AUTO_INCREMENT,
+    BookID INT NOT NULL,
+    MemberID INT NOT NULL,
+    LoanDate DATE NOT NULL,
+    ReturnDate DATE,
+    PRIMARY KEY (LoanID),
+    FOREIGN KEY (BookID) REFERENCES Books(BookID),
+    FOREIGN KEY (MemberID) REFERENCES Members(MemberID)
+);

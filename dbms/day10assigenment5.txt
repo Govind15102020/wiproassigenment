@@ -1,0 +1,90 @@
+
+Assignment 5: Craft a query using an INNER JOIN to combine 'orders' and 'customers' tables for customers in a specified region, and a LEFT JOIN to display all customers including those without orders.
+
+
+
+To achieve this, we'll break the task into two parts:
+
+Using an INNER JOIN to combine orders and customers tables for customers in a specified region.
+Using a LEFT JOIN to display all customers, including those without orders.
+Here’s how you can construct these queries:
+
+Part 1: INNER JOIN for customers in a specified region
+Assume the tables orders and customers have the following structure:
+
+orders: order_id, customer_id, order_date, order_amount
+customers: customer_id, customer_name, region
+We will join these tables on customer_id and filter for customers in a specific region, say 'West'.
+
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+
+INNER JOIN 
+    orders o ON c.customer_id = o.customer_id
+WHERE 
+    c.region = 'West';
+Part 2: LEFT JOIN to display all customers including those without orders
+This query ensures that all customers are displayed, with null values for orders if there are no corresponding orders.
+
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+
+
+LEFT JOIN 
+    orders o ON c.customer_id = o.customer_id;
+Combining both parts together, the SQL queries would look like this:
+
+Combined Queries
+Query 1: INNER JOIN for customers in a specified region (e.g., 'West')
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+
+
+INNER JOIN 
+    orders o ON c.customer_id = o.customer_id
+WHERE 
+    c.region = 'West';
+Query 2: LEFT JOIN to display all customers including those without orders
+sql
+Copy code
+SELECT 
+    c.customer_id,
+    c.customer_name,
+    c.region,
+    o.order_id,
+    o.order_date,
+    o.order_amount
+FROM 
+    customers c
+
+
+LEFT JOIN 
+    orders o ON c.customer_id = o.customer_id;
+These queries should fulfill the re
